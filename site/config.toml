@@ -9,8 +9,10 @@ title = "Homepage"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 
-[params.staticman]
+[staticman]
+  endpoint = "https://api.staticman.net/v2/entry/"
   username = "carlosaug2"
   repository = "https://github.com/carlosaug2/blogteste"
   branch = "master"
-  notifications = false
+
+
