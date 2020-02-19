@@ -3,11 +3,12 @@
 {{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
 {{ .Content }}
 
-<h1>{{ .Title }}</h1>
-{{ .Content }}
-<hr>
-<h2>Comments</h2>
-{{ partial "staticman/form-comments" . }}
-{{ partial "staticman/show-comments" . }}
+	<section class="post-content">
+		{{ .Content }}
+	</section>
+
+	{{ partial "post-comments" . }}
 
 {{ end }}
+
+
