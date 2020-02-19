@@ -11,7 +11,7 @@ comments:
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
-  allowedOrigins: ["localhost", "pixeladasx.com"]
+  allowedOrigins: ["localhost", "https://hugoteste.netlify.com/"]
 
   # (*) REQUIRED
   #
@@ -60,7 +60,7 @@ comments:
 
 posts:
   allowedFields: ["title", "body"]
-  allowedOrigins: ["localhost", "pixeladasx.com"]
+  allowedOrigins: ["localhost", "https://hugoteste.netlify.com/"]
   branch: "master"
   generatedFields:
     date:
