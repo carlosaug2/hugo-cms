@@ -3,11 +3,11 @@
 {{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
 {{ .Content }}
 
-	<section class="post-content">
-		{{ .Content }}
-	</section>
+	
 
-	{{ partial "post-comments" . }}
+<div id="commento"></div>
+<script src="https://cdn.commento.io/js/commento.js"></script>
+
 
 {{ end }}
 
