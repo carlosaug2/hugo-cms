@@ -10,9 +10,16 @@
       <p>{{ .Description }}</p>
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
-      
-      <div id="commento"></div>
+  
+<div id="commento"></div>
 <script src="https://cdn.commento.io/js/commento.js"></script>
+
+{{ if and .Site.Params.CommentoURL (and (not .Site.BuildDrafts) (not .Site.IsServer)) -}}
+<h2>Comments</h2>
+{{ partial "commento.html" . }}
+
+
+
     </div>
   </div>
 {{ end }}
